@@ -1,0 +1,121 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#map{
+   height: 100vh;
+}
+
+.silo__list {
+    position: absolute;
+    width: fit-content;
+    top: 5vh;
+    bottom: 30vh;
+    left: 5vw;
+    z-index: 5;
+    color:white;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #333;
+    opacity: 0.9;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+
+
+.silo__list: :hover > h3{
+    text-align: center;
+    padding: 2rem;
+    border-bottom: 3px solid white;
+    float: left;
+}
+
+.silo__names{
+  flex:1;
+  padding:5rem;
+  cursor: pointer;
+  float: left;
+}
+
+.window{
+  height: fit-content;
+  width: fit-content;
+  background-color: #333;
+  color: white;
+  border-bottom-right-radius: 20px !important;
+  padding: 0 2rem;
+}
+
+.window h2{
+  border-bottom: 3px solid lightblue !important;
+}
+
+.gm-style-iw{
+  background: #333 !important;
+  opacity: 0.8 !important;
+  overflow: visible !important;
+  box-shadow: 0 2px 7px 7px rgba(0,0,0,0.5)!important;
+}
+
+.gm-style-iw-d{
+  overflow: hidden !important;
+}
+
+.gm-ui-hover-effect{   /* boton */
+background: #fff !important;
+border-radius: 50%;
+}
+
+.gm-style-iw-t::after{
+  visibility: hidden;
+}
+
+.segurity{
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+}
+
+.segurity > i{
+  color: white;
+  margin-right: 1rem;
+
+}
+
+.time{
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+}
+
+.time > i{
+  color: white;
+  margin-right: 1rem;
+}
+
+.state{
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+}
+
+.state > i{
+  color: white;
+  margin-right: 1rem;
+}
+
+.date{
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+}
+
+.date > i{
+  color: white;
+  margin-right: 1rem;
+}
