@@ -1,16 +1,9 @@
-function onSignIn(googleUser) {
-    var profile = googleUser.getBasicProfile();
-    $(".silo_list")
-    $(".silo_names")
-    $("#map")
-  
-}
+function handleCredentialResponse(response) {
+  const data = jwt_decode(response.credential)
 
-function signOut() {
-    var auth2 = gapi.auth2.getAuthInstance();
-    auth2.signOut().then(function () {
-        alert("You have been signed out successfully");
-        $(".data").css("display", "none");
-        $(".g-signin2").css("display", "block");
-    });
+  silo_names.textContent = data.silo_names
+  silo_list.textContent = data.silo_list
+  map.textContent = data.map
+ 
+  )
 }
